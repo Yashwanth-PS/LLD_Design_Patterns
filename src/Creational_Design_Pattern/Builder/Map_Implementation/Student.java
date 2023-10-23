@@ -8,11 +8,21 @@ public class Student {
     private int age;
     private String email;
     public Student(Map<String, Object> map){ // As soon as you go inside the constructor Java will create an Object
-        String name = (String) map.get("Name"); // Down Casting is not recommended
-        if (name != null){
-            // Some Validations
-            // Initialization
+        id = (int) map.get("id"); // Down Casting is not recommended in Java
+        if ((String) map.get("name") != null){ // Some Validations
+            name = (String) map.get("name"); // Down Casting is not recommended in Java
         }
-        String age = (String) map.get("age"); // Down Casting is not recommended
+        age = (int) map.get("age"); // Down Casting is not recommended
+        email = (String) map.get("email"); // Down Casting is not recommended in Java
+    }
+
+    @Override
+    public String toString() {
+        return "Student{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", age=" + age +
+                ", email='" + email + '\'' +
+                '}';
     }
 }
