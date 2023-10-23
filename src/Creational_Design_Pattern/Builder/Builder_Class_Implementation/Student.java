@@ -56,14 +56,14 @@ public class Student {
             this.batchName = batchName;
             return this;
         }
-        public void validate(){
-            if(name == null){
+        private void validate(){ // Check Point
+            if(this.name == null){ // Check Point
                 throw new InvalidNameException("Name should not be null");
             }
-            if(yoe < 1){
+            if(this.yoe < 1){ // Check Point
                 throw new InvalidYoeException("YOE should be greater than 1");
             }
-            if(gradYear > 2022){
+            if(this.gradYear > 2022){ // Check Point
                 throw new InvalidGradYearException("Grad Year should be greater than 2022");
             }
         }
