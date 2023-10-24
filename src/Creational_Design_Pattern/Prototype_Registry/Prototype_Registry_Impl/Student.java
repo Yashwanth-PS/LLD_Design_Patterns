@@ -9,6 +9,7 @@ public class Student { // Step1: Create a Prototype class and define the attribu
     private String name;
     private String phoneNumber;
     private String email;
+
     public Student(){ // Step2: Define an Empty Constructor (Default Constructor)
 
     }
