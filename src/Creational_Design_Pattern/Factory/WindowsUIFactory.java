@@ -7,6 +7,7 @@ import Creational_Design_Pattern.Factory.Components.DropDown.WindowsDropDown;
 import Creational_Design_Pattern.Factory.Components.Menu.Menu;
 import Creational_Design_Pattern.Factory.Components.Menu.WindowsMenu;
 
+// Step6: Create respective Classes which has the Factory Methods responsible for creating respective objects
 public class WindowsUIFactory implements UIFactory{
     @Override
     public Menu createMenu() { // Factory Method for Creating Menu Object
