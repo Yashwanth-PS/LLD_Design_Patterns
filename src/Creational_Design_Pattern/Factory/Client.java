@@ -12,6 +12,18 @@ public class Client {
         Menu menu = uiFactory.createMenu();
         DropDown dropDown = uiFactory.createDropDown();
         Button button = uiFactory.createButton();
-
     }
 }
+
+/*
+To Add a new Platform:
+    -	Go to Enum (Supported Platform) and Add the Platform
+        o	Windows
+    -	Create the Components Classes which implements the Parent Interface
+        o	Windows Button
+        o	Windows DropDown
+        o	Windows Menu
+    -	Create UI Factory (Windows UI Factory) and Implement the Methods of UI Factory Interface
+    -	Add the switch case in UIFactoryFactory
+    -	If Windows App is Required in the client we can just create Windows Application
+*/
