@@ -7,7 +7,7 @@ import Creational_Design_Pattern.Factory.Components.Button.Button;
 public class Client {
     public static void main(String[] args) {
         // Factory Design Pattern: Choose between objects while object creation
-        Flutter flutter = new Flutter(SupportedPlatform.IOS);
+        Flutter flutter = new Flutter(SupportedPlatform.ANDROID);
         UIFactory uiFactory = flutter.createUIFactory();
         Menu menu = uiFactory.createMenu();
         DropDown dropDown = uiFactory.createDropDown();

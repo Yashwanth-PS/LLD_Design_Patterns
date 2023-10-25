@@ -10,16 +10,19 @@ import Creational_Design_Pattern.Factory.Components.Menu.WindowsMenu;
 public class WindowsUIFactory implements UIFactory{
     @Override
     public Menu createMenu() { // Factory Method for Creating Menu Object
+        System.out.println("Created Menu for Windows App");
         return new WindowsMenu();
     }
 
     @Override
     public DropDown createDropDown() { // Factory Method for Creating DropDown Object
+        System.out.println("Created DropDown for Windows App");
         return new WindowsDropDown();
     }
 
     @Override
     public Button createButton() { // Factory Method for Creating Button Object
+        System.out.println("Created Button for Windows App");
         return new WindowsButton();
     }
 }

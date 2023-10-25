@@ -10,16 +10,19 @@ import Creational_Design_Pattern.Factory.Components.Menu.Menu;
 public class IOSUIFactory implements UIFactory{
     @Override
     public Menu createMenu() { // Factory Method for Creating Menu Object
+        System.out.println("Created Menu for IOS App");
         return new IOSMenu();
     }
 
     @Override
     public DropDown createDropDown() { // Factory Method for Creating DropDown Object
+        System.out.println("Created DropDown for IOS App");
         return new IOSDropDown();
     }
 
     @Override
     public Button createButton() { // Factory Method for Creating Button Object
+        System.out.println("Created Button for IOS App");
         return new IOSButton();
     }
 }
