@@ -1,7 +1,7 @@
 package Structural_Design_Pattern.Adapter.Google_Pay_CaseStudy;
 public class GooglePay {
     private BankAPIAdapter bankAPIAdapter;
-    public GooglePay(ICICIBankAPI iciciBankAPI) {
+    public GooglePay() {
         // bankAPIAdapter = new YesBankAdapter();
         bankAPIAdapter = new ICICIBankAdapter();
     }

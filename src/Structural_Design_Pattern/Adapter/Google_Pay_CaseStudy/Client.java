@@ -2,17 +2,9 @@ package Structural_Design_Pattern.Adapter.Google_Pay_CaseStudy;
 
 public class Client {
     public static void main(String[] args) {
-        /* // Create a YesBankAPI instance
-        YesBankAPI yesBankAPI = new YesBankAPI();
 
-        // Create a GooglePay instance with the YesBankAPI
-        GooglePay googlePay = new GooglePay(yesBankAPI); */
-
-        // Create a ICICIBankAPI instance
-        ICICIBankAPI iciciBankAPI = new ICICIBankAPI();
-
-        // Create a GooglePay instance with the ICICIBankAPI
-        GooglePay googlePay = new GooglePay(iciciBankAPI);
+        // Create a GooglePay instance
+        GooglePay googlePay = new GooglePay();
 
         // Perform operations using GooglePay
         String fromUser = "Alice";
