@@ -15,7 +15,7 @@ public class Client {
 
         // Transfer money
         String transferResult = phonePe.transferMoney(fromUser, toUser, amount);
-        System.out.println("Money Transfer Result: " + transferResult);
+        System.out.println(transferResult);
 
         // Check balance
         double balance = phonePe.checkBalance(fromUser);

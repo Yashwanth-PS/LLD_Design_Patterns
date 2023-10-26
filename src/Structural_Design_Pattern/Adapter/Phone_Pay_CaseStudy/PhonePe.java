@@ -8,11 +8,10 @@ public class PhonePe {
     public String transferMoney(String fromUserName, String toUserName, double amount){
         // Business Logic
         char result  = yesBankAPI.transfer(fromUserName, toUserName, (int)amount);
-        if(result == 'D'){
-            return "Transfer is Done";
-        } else{
-            return "Transfer Failed";
-        }
+        if(result == 'D')
+            return "Transaction is Successful";
+        else
+            return "Transaction Failed";
     }
     public double checkBalance(String userName){
         // Business Logic
