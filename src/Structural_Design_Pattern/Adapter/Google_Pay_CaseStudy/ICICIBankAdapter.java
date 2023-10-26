@@ -11,7 +11,10 @@ public class ICICIBankAdapter implements BankAPIAdapter{
     public String transfer(String toUserName, String fromUserName, double amount) {
         long fromUserId = returnIdFromUserName(fromUserName);
         long toUserId= returnIdFromUserName(toUserName);
-        return iciciBankAPI.doPayment(toUserId, fromUserId, amount);
+        if(iciciBankAPI.doPayment(toUserId, fromUserId, amount).equals("success"))
+            return "Transaction Successful";
+        else
+            return "Transaction Failed";
     }
 
     @Override
@@ -25,6 +28,7 @@ public class ICICIBankAdapter implements BankAPIAdapter{
     }
 
     private long returnIdFromUserName(String userName){
+        // Helps to get the userId from userName
         return 0;
     }
 }

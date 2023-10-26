@@ -1,7 +1,7 @@
 package Structural_Design_Pattern.Adapter.Google_Pay_CaseStudy;
 public class YesBankAPI {
     public char transfer(String fromPerson, String toPerson, int Amount){
-        System.out.println("Amount Transferred");
+        // logic for verifying whether the transaction was completed
         return 'D';
     }
     public int checkBalance(String accountDetails){

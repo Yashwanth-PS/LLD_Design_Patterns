@@ -20,8 +20,7 @@ public class Client {
         double amount = 500.0;
 
         // Transfer money
-        String transferResult = googlePay.transferMoney(fromUser, toUser, amount);
-        System.out.println("Money Transfer Result: " + transferResult);
+        System.out.println(googlePay.transferMoney(fromUser, toUser, amount));
 
         // Check balance
         double balance = googlePay.checkBalance(fromUser);

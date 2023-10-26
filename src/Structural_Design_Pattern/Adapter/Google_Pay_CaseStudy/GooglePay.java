@@ -7,7 +7,7 @@ public class GooglePay {
     }
     public String transferMoney(String fromUserName, String toUserName, double amount){
         // Business Logic
-        return bankAPIAdapter.transfer(fromUserName, toUserName, (int)amount);
+        return bankAPIAdapter.transfer(fromUserName, toUserName, amount);
     }
     public double checkBalance(String userName){
         // Business Logic

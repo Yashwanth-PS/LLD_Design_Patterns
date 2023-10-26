@@ -2,7 +2,7 @@ package Structural_Design_Pattern.Adapter.Google_Pay_CaseStudy;
 
 public class ICICIBankAPI {
     public String doPayment(long fromId, long toId, double Amount){
-        System.out.println("Amount Transferred");
+        // logic for verifying whether the transaction was completed
         return "success";
     }
     public double Balance(long accountId){

@@ -11,9 +11,9 @@ public class YesBankAdapter implements BankAPIAdapter {
     public String transfer(String toUserName, String fromUserName, double amount) {
         char result = yesBankAPI.transfer(fromUserName, toUserName, (int) amount);
         if (result == 'D') {
-            return "Success";
+            return "Transaction Successful";
         } else {
-            return "Failure";
+            return "Transaction Failed";
         }
     }
 
