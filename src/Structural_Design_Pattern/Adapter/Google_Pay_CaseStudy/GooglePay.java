@@ -3,7 +3,7 @@ public class GooglePay {
     private BankAPIAdapter bankAPIAdapter;
     public GooglePay() {
         // bankAPIAdapter = new YesBankAdapter();
-        bankAPIAdapter = new ICICIBankAdapter();
+        bankAPIAdapter = new YesBankAdapter();
     }
     public String transferMoney(String fromUserName, String toUserName, double amount){
         // Business Logic
