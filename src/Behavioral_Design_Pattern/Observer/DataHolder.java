@@ -4,10 +4,4 @@ public class DataHolder { // Data Holder Class
     public DataHolder(String data) {
         Data = data;
     }
-    public String getData() {
-        return Data;
-    }
-    public void setData(String data) {
-        Data = data;
-    }
 }

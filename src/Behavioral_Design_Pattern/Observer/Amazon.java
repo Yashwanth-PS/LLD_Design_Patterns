@@ -6,7 +6,7 @@ import java.util.List;
 public class Amazon { // Publisher --> where the event actually happens
     private List<OrderPlacedSubscriber> orderPlacedSubscribers; // Contains list of subscriber objects
     private static Amazon instance;
-    public Amazon() {
+    private Amazon() {
         this.orderPlacedSubscribers = new ArrayList<>();
     }
     public void orderPlaced(){ // Event Method
@@ -20,7 +20,7 @@ public class Amazon { // Publisher --> where the event actually happens
     public void deregister(OrderPlacedSubscriber orderPlacedSubscriber){
         orderPlacedSubscribers.remove(orderPlacedSubscriber);
     }
-    public static Amazon getInstance() {
+    public static Amazon getInstance() { // Singleton Object/Instance
         if (instance == null) {
             synchronized (Amazon.class) {
                 if (instance == null) {

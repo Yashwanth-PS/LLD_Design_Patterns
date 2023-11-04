@@ -7,8 +7,8 @@ public class CustomerNotifier implements OrderPlacedSubscriber{
     }
     @Override
     public DataHolder orderPlaceEvent() {
-        DataHolder data = new DataHolder("Notify the customer regarding order is placed");
-        System.out.println("Notify the customer regarding order is placed");
+        DataHolder data = new DataHolder("Customer is being Notified");
+        System.out.println("Customer is being Notified");
         return data;
     }
 }

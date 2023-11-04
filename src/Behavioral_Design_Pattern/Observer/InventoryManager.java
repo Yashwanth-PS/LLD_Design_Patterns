@@ -7,7 +7,7 @@ public class InventoryManager implements OrderPlacedSubscriber{
     }
     @Override
     public DataHolder orderPlaceEvent() {
-        DataHolder data = new DataHolder("Inventory Updated");
+        DataHolder data = new DataHolder("Inventory is being Updated");
         System.out.println("Inventory is being Updated");
         return data;
     }
