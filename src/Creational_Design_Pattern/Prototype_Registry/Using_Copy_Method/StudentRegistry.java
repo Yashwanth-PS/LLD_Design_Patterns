@@ -1,4 +1,4 @@
-package Creational_Design_Pattern.Prototype_Registry.Prototype_Registry_Impl;
+package Creational_Design_Pattern.Prototype_Registry.Using_Copy_Method;
 
 import java.util.HashMap;
 
