@@ -12,5 +12,5 @@ public class Client {
         System.out.println("Address of the object s2 : " + System.identityHashCode(s2));
         System.out.println("Address of the object s3 : " + System.identityHashCode(s3));
         System.out.println("Address of the object s4 : " + System.identityHashCode(s4));
-    }
+     }
 }
